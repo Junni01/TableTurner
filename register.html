@@ -40,21 +40,20 @@
     <div class="row content">
         <div class="col-sm-3 sidenav">
             <form class="form-signin">
-                <h2 class="form-signin-heading">Sisäänkirjautuminen</h2>
+                <h2 class="form-signin-heading">Rekisteröi tunnus</h2>
+                <label for="inputEmail" class="sr-only">Etunimi</label>
+                <input type="text" id="inputName" class="form-control" placeholder="Etunimi" required autofocus>
+                <label for="inputPassword" class="sr-only">Sukunimi</label>
+                <input type="text" id="inputLastname" class="form-control" placeholder="Sukunimi" required>
+                <br>
                 <label for="inputEmail" class="sr-only">Sähköposti</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Sähköposti" required autofocus>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Sähköposti" required>
                 <label for="inputPassword" class="sr-only">Salasana</label>
                 <input type="password" id="inputPassword" class="form-control" placeholder="Salasana" required>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Muista minut
-                    </label>
-
-
-                </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Kirjaudu</button><br>
-                <a href="register.html"> Luo tunnukset </a>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="register()">Rekisteröi</button><br>
             </form>
+        </div>
         </div>
 
 
@@ -104,4 +103,23 @@
 
 
 </body>
+
+<script>
+
+function register(){
+
+    if () {
+    window.location.href = 'index.html';
+    } else {
+
+    }
+
+}
+
+
+
+
+</script>
+
+
 </html>
