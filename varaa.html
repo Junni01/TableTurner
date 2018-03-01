@@ -35,11 +35,24 @@
     </style>
 </head>
 <body>
-<p>Hei <p id="usernameHold">Username</p></p> <a href="tietomuutos.html"> Muuta tietoja </a>
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-3 sidenav">
+            <p>Hei <p id="usernameHold">Username</p></p> <a href="tietomuutos.html"> Muuta tietoja </a>
+        </div>
+        <div class="col-sm-9">
+            <h1>Varaukset: </h1>
+            <div id="reservations"></div>
+            <h1> Uusi varaus</h1>
+            <p>valite päivä</p>
+            <input type="date">
+            <p>ajat: </p><div id="times"></div>
 
-<h1>Varaukset: </h1>
-<div id="reservations"></div>
 
+        </div>
+
+    </div>
+</div>
 
 </body>
 </html>
