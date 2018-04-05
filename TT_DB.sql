@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `firstName` varchar(16) NOT NULL,
   `lastName` varchar(16) NOT NULL,
   `email` varchar(64) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(200) NOT NULL,
   PRIMARY KEY (`userID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
