@@ -44,9 +44,9 @@
     <div class="row content">
         <div class="col-sm-3 sidenav">
             <p>Hei <p id="usernameHold">
-            <?php
-              echo '$_SESSION['login_user']';
-            ?>
+           // <?php
+           //   echo '$_SESSION['login_user']';
+           // ?>
         </p></p> <a href="tietomuutos.html"> Muuta tietoja </a>
                 </div>
 <div class="col-sm-9">
