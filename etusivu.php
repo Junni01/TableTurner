@@ -43,11 +43,13 @@
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav">
-            <p>Hei <p id="usernameHold">
-            <?php
-            //  echo '$_SESSION['login_user']';
-            ?>
-        </p></p> <a href="tietomuutos.php"> Muuta tietoja </a>
+            <p>Hei
+
+              <?php
+              echo $_SESSION['login_user'];
+              ?>
+
+        </p> <a href="tietomuutos.php"> Muuta tietoja </a>
                 </div>
 <div class="col-sm-9">
 <h1>Varaukset: </h1>
