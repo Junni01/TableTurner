@@ -16,8 +16,8 @@
        $sql = "SELECT password FROM user WHERE email = '$l_email'";
        $result = mysqli_query($db, $sql);
        $userID = mysqli_query($db, "SELECT userID FROM user WHERE email = '$l_email'");
-       $sfName = mysqli_query($db, "SELECT firstName FROM user WHERE email = '$l_email'");
-       $slName = mysqli_query($db, "SELECT lastName FROM user WHERE email = '$l_email'");
+      $sfName = mysqli_query($db, "SELECT firstName FROM user WHERE email = '$l_email'");
+      $slName = mysqli_query($db, "SELECT lastName FROM user WHERE email = '$l_email'");
        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
        $hashFromDb = $row['password'];
        //returns true is entered password matches one in db
