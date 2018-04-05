@@ -5,6 +5,7 @@
  * Date: 5.4.2018
  * Time: 11.47
  */
+include "connect.php";
 
 $fName = $_POST['fName'];
 $lName = $_POST['lName'];
@@ -27,3 +28,6 @@ else {
     }
 
 }
+
+header("refresh:2; url=index.html");
+die();
