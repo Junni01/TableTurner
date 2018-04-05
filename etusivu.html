@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include 'connect.php'; ?>
 
         <title>Le Penier</title>
         <meta charset="utf-8">
@@ -37,12 +36,18 @@
         </style>
     </head>
 <body>
+<?php
+    include "connect.php";
+    include "session.php";
+?>
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav">
-            <p>Hei <p id="usernameHold"> <?php
+            <p>Hei <p id="usernameHold">
+            <?php
               echo '$_SESSION['login_user']';
-        ?> </p></p> <a href="tietomuutos.html"> Muuta tietoja </a>
+            ?>
+        </p></p> <a href="tietomuutos.html"> Muuta tietoja </a>
                 </div>
 <div class="col-sm-9">
 <h1>Varaukset: </h1>
