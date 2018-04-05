@@ -22,12 +22,13 @@
        if($passwordHash){
            //Set sessions variable
            $_SESSION['login_user'] = $l_email;
-         //  header("location: logged_in.php");
+          header("location: etusivu.html");
        }else {
            $error = "<div class='error'>Invalid email or password</div>";
            echo $error;
-           // header("refresh:2; url=index.php");
+           header("refresh:2; url=index.html");
        }
    }else{
-      //  header ("refresh:1 url=index.php");
+      header ("refresh:1 url=index.html");
+
    }
