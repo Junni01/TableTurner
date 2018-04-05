@@ -21,10 +21,12 @@ if ($rows >= 1) {
     die();
 }
 else {
-    $sql = "Insert into user(firstName, lastName, email, password) VALUES ($fname, $lName, $email, $passwordhash)";
+    $sql = "Insert into user(firstName, lastName, email, password) VALUES ('$fname', '$lName', '$email', '$passwordhash')";
 
     if ($db->query($sql) === TRUE){
         // Ilmoittaa onnistuneen sisäänkirjautumisen
+    } else {
+        db->error;
     }
 
 }
