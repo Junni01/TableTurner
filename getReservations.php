@@ -13,8 +13,8 @@ $result = $db->query($sql);
 echo 'Toimii';
 if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
-        echo "Toimii"; // $row["ReservationID"] . $row["date"] . $row["time"] . $row["details"];
-        /* echo"
+        echo  $row["ReservationID"] . $row["date"] . $row["time"] . $row["details"];
+         echo"
         <div class='row threadContainer'>
           <div class=col-md-12>
             <h4><a  href='viewThread.php?id=$row[thread_id]&title=$row[thread_title]'>$row[thread_title]</a></h4>
@@ -29,6 +29,6 @@ if($result->num_rows > 0){
           <div class=col-md-4>
             <p class='threadId'>#$row[thread_id]</p>
           </div>
-        </div>"; */
+        </div>";
     }
 }

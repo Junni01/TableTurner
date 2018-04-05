@@ -53,7 +53,7 @@
                 <br>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Rekisteröi</button><br>
             </form>
-            <form action="register.html"></form>
+            <form action="register.php"></form>
         </div>
         </div>
 
@@ -110,7 +110,7 @@
 /*function register(){
 
     if () {
-    window.location.href = 'index.html';
+    window.location.href = 'index.php';
     } else {
 
     }

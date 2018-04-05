@@ -53,7 +53,7 @@
 
                 </div>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">KirjauduT</button><br>
-                <a href="register.html"> Luo tunnukset </a>
+                <a href="register.php"> Luo tunnukset </a>
             </form>
         </div>
 

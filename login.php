@@ -32,9 +32,9 @@
        }else {
            $error = "<div class='error'>Invalid email or password</div>";
            echo $error;
-           header("refresh:2; url=index.html");
+           header("refresh:2; url=index.php");
        }
    }else{
-      header ("refresh:1 url=index.html");
+      header ("refresh:1 url=index.php");
 
    }
