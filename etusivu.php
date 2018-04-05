@@ -54,14 +54,6 @@
 <div id="reservations">
     <?php
 
-
-        echo "moi";
-
-    ?>
-    include 'getReservations.php';
-PASKA
-    <?php
-
         include 'getReservations.php';
         echo "moi";
 

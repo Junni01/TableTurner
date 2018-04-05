@@ -28,7 +28,7 @@
            $_SESSION['userID'] =$userID;
            $_SESSION['fName'] = $sfName;
            $_SESSION['lName'] = $slName;
-          header("location: etusivu.html");
+          header("location: etusivu.php");
        }else {
            $error = "<div class='error'>Invalid email or password</div>";
            echo $error;
