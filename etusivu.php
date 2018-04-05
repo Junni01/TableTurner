@@ -54,10 +54,10 @@
 <div class="col-sm-9">
 <h1>Varaukset: </h1>
 <div id="reservations">
-   // <?php
+    <?php
 
-     //   include 'getReservations.php';
-       // echo "moi";
+        include 'getReservations.php';
+
 
     ?>
 
