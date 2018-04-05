@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <?php
+    include "connect.php";
+    include "session.php";
+    ?>
         <title>Le Penier</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,10 +39,7 @@
         </style>
     </head>
 <body>
-<?php
-    include "connect.php";
-    include "session.php";
-?>
+
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav">
