@@ -39,17 +39,17 @@
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav">
-            <form class="form-signin">
+            <form class="form-signin" action="registerform.php" method="post">
                 <h2 class="form-signin-heading">Rekisteröi tunnus</h2>
                 <label for="inputEmail" class="sr-only">Etunimi</label>
-                <input type="text" id="inputName" class="form-control" placeholder="Etunimi" required autofocus>
+                <input type="text" id="inputName" name="fName" class="form-control" placeholder="Etunimi" required autofocus>
                 <label for="inputPassword" class="sr-only">Sukunimi</label>
-                <input type="text" id="inputLastname" class="form-control" placeholder="Sukunimi" required>
+                <input type="text" id="inputLastname" name="lName" class="form-control" placeholder="Sukunimi" required>
                 <br>
                 <label for="inputEmail" class="sr-only">Sähköposti</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Sähköposti" required>
+                <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Sähköposti" required>
                 <label for="inputPassword" class="sr-only">Salasana</label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Salasana" required>
+                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Salasana" required>
                 <br>
                 <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="register()">Rekisteröi</button><br>
             </form>
