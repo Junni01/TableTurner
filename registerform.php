@@ -24,9 +24,9 @@ else {
     $sql = "Insert into user(firstName, lastName, email, password) VALUES ('$fname', '$lName', '$email', '$passwordhash')";
 
     if ($db->query($sql) === TRUE){
-        // Ilmoittaa onnistuneen sisäänkirjautumisen
+        echo "<div> Rekisteröinti onnistui! </div>"
     } else {
-        db->error;
+       echo db->error;
     }
 
 }
