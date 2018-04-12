@@ -70,7 +70,7 @@
                 </table>
             </div>
         </div>
-        <div class="col-sm-3"> </div>
+        <div class="col-sm-3">TÄMÄ PITÄISI OLLA SIVUSSA </div>
     </div>
 </div>
 
