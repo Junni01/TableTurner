@@ -14,8 +14,8 @@ if(isset($_SESSION['login_user'])){
     $ses_sql = mysqli_query($db, "select email FROM user where email = '$user_check' ");
     $row = mysqli_fetch_array($ses_sql, MYSQLI_ASSOC);
     $login_session = $row['email'];
-    $sfName = mysqli_query($db, "SELECT firstName FROM user WHERE email ='$user_check' ");
-    $slName = mysqli_query($db, "SELECT lastName FROM user WHERE email = '$user_check'");
+    $sfName = $row['firstName'];
+    $slName = $row['lastName'];
     $_SESSION['fName'] = $sfName;
     $_SESSION['lName'] = $slName;
 }
