@@ -57,7 +57,7 @@ if($result->num_rows > 0){
         echo
             "<tr>".
             "<td>".
-            $row["ReservationID"].
+            "XXX".
             "</td>".
             "<td>".
             $row["date"].
@@ -69,7 +69,7 @@ if($result->num_rows > 0){
             $row["details"].
             "</td>".
             "<td>".
-            "<input type='radio' name='optradio'>".
+            "<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
             "</td>".
             "</tr>";
 
