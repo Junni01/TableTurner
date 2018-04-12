@@ -68,7 +68,7 @@ if($result->num_rows > 0){
             $row["details"].
             "</td>".
             "<td>".
-            "<input type='radio'>".
+            "<input type='radio' name='optradio'>".
             "</td>".
             "</tr>";
 
