@@ -50,12 +50,25 @@
         </p></p> <a href="tietomuutos.php"> Muuta tietoja </a>
                 </div>
 <div class="col-sm-9">
-<h1>Varaukset: </h1>
-<div id="reservations">
+<div class="container">
+    <h1>Varaukset</h1>
+    <p>Tässä voimassaolevat varauksenne</p>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+        <th>ID</th>
+        <th>Pvm</th>
+            <th>Klo</th>
+        <th>Kommentti</th>
+
+        </tr>
+        </thead>
+        <tbody>
     <?php
         include 'getReservations.php';
     ?>
-
+        </tbody>
+    </table>
 </div>
 </div>
     </div>
