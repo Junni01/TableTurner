@@ -1,3 +1,5 @@
+
+<?php include 'login.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,10 +49,11 @@
 
     <div class="col-sm-9">
 
+
         <div>
             <label for="information">Tietosi:</label>
-            <p id="information"> Etunimi: <?php echo "$_SESSION['fName']" ?> </p>
-            <p>Sukunimi: <?php echo "$_SESSION['lName']" ?> </p>
+            <p id="information"> Etunimi:  <?php echo "$_SESSION['fName']" ?> </p>
+            <p>Sukunimi: <?php echo "$_SESSION['lName']"?> </p>
             <p>Sähköposti: <?php echo "$_SESSION['login_user']" ?></p>
 
         </div>

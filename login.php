@@ -23,7 +23,7 @@
        //returns true is entered password matches one in db
        $passwordHash = password_verify($l_password, $hashFromDb);
        if($passwordHash){
-           //Set sessions variable
+           //Set sessions variables
            $_SESSION['login_user'] = $l_email;
            $_SESSION['userID'] =$userID;
            $_SESSION['fName'] = $sfName;
