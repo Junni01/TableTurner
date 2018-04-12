@@ -10,10 +10,9 @@ include 'connect.php';
 $sql = "select * from reservation";
 $result = $db->query($sql);
 // Selects and echoes all reservations from database to the index.php page
-echo 'Toimii';
 if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
-        echo "Toimii"; // $row["ReservationID"] . $row["date"] . $row["time"] . $row["details"];
+        echo $row["ReservationID"] . $row["date"] . $row["time"] . $row["details"];
         /* echo"
         <div class='row threadContainer'>
           <div class=col-md-12>
