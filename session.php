@@ -7,8 +7,9 @@
  */
 session_start();
 include "connect.php";
-$testii = "hei";
+
 if(isset($_SESSION['login_user'])){
+    $testii = "hei";
     $sfName = mysqli_query($db, "SELECT firstName FROM user WHERE email = '$l_email'");
     $slName = mysqli_query($db, "SELECT lastName FROM user WHERE email = '$l_email'");
     $_SESSION['fName'] = $sfName;
