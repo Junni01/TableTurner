@@ -51,24 +51,22 @@
         </div>
 
         <div class="col-sm-6">
-            <div class="container">
-                <h1>Varaukset</h1>
-                <p>Tässä voimassaolevat varauksenne</p>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Pvm</th>
-                            <th>Klo</th>
-                            <th>Kommentti</th>
-                        </tr>
-                    </thead>
+            <h1>Varaukset</h1>
+            <p>Tässä voimassaolevat varauksenne</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Pvm</th>
+                        <th>Klo</th>
+                        <th>Kommentti</th>
+                    </tr>
+                </thead>
 
-                    <tbody>
-                        <?php include 'getReservations.php'; ?>
-                    </tbody>
-                </table>
-            </div>
+                <tbody>
+                    <?php include 'getReservations.php'; ?>
+                </tbody>
+            </table>
         </div>
         <div class="col-sm-3">TÄMÄ PITÄISI OLLA SIVUSSA </div>
     </div>

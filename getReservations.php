@@ -14,18 +14,18 @@ if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
         echo
             "<tr>".
-            "<th>".
+            "<td>".
             $row["ReservationID"].
-            "</th>".
-            "<th>".
+            "</td>".
+            "<td>".
             $row["date"].
-            "</th>".
-            "<th>".
+            "</td>".
+            "<td>".
             $row["time"].
-            "</th>".
-            "<th>".
+            "</td>".
+            "<td>".
             $row["details"].
-            "</th>".
+            "</td>".
             "</tr>";
         /* echo"
         <div class='row threadContainer'>
