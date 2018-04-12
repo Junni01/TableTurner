@@ -43,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tietomuutos.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tietomuutos.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tietomuutos.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
@@ -55,15 +55,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="session.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="525">
+              <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
               <folding>
-                <marker date="1523531781079" expanded="true" signature="257:307" ph="select email... user" />
-                <marker date="1523531781079" expanded="true" signature="434:487" ph="SELECT first... user" />
-                <marker date="1523531781079" expanded="true" signature="523:576" ph="SELECT lastN... user" />
+                <marker date="1523532249284" expanded="true" signature="257:336" ph="select email... user" />
+                <marker date="1523532249284" expanded="true" signature="465:518" ph="SELECT first... user" />
+                <marker date="1523532249284" expanded="true" signature="556:609" ph="SELECT lastN... user" />
               </folding>
             </state>
           </provider>
@@ -154,8 +154,8 @@
         <option value="$PROJECT_DIR$/etusivu.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/getReservations.php" />
-        <option value="$PROJECT_DIR$/session.php" />
         <option value="$PROJECT_DIR$/tietomuutos.php" />
+        <option value="$PROJECT_DIR$/session.php" />
       </list>
     </option>
   </component>
@@ -243,12 +243,12 @@
       <workItem from="1519900949794" duration="1453000" />
       <workItem from="1520493087316" duration="1617000" />
       <workItem from="1520506628129" duration="622000" />
-      <workItem from="1522917971118" duration="13948000" />
+      <workItem from="1522917971118" duration="14340000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24367000" />
+    <option name="totallyTimeSpent" value="24759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -680,24 +680,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding>
-            <marker date="1523531781079" expanded="true" signature="257:307" ph="select email... user" />
-            <marker date="1523531781079" expanded="true" signature="434:487" ph="SELECT first... user" />
-            <marker date="1523531781079" expanded="true" signature="523:576" ph="SELECT lastN... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tietomuutos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="55" column="66" lean-forward="false" selection-start-line="55" selection-start-column="66" selection-end-line="55" selection-end-column="66" />
           <folding>
             <marker date="1523531858365" expanded="true" signature="1861:1877" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <marker date="1523532249284" expanded="true" signature="257:336" ph="select email... user" />
+            <marker date="1523532249284" expanded="true" signature="465:518" ph="SELECT first... user" />
+            <marker date="1523532249284" expanded="true" signature="556:609" ph="SELECT lastN... user" />
           </folding>
         </state>
       </provider>
