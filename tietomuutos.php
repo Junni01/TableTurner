@@ -51,9 +51,9 @@
 
         <div>
             <label for="information">Tietosi:</label>
-            <p id="information"> Etunimi:  <?php echo "$_SESSION['fName']" ?> </p>
-            <p>Sukunimi: <?php echo "$_SESSION['lName]"?> </p>
-            <p>Sähköposti: <?php echo "$_SESSION['login_user']" ?></p>
+            <p id="information"> Etunimi:  <?php echo "$_SESSION[1]" ?> </p>
+            <p>Sukunimi: <?php echo "$_SESSION[2]"?> </p>
+            <p>Sähköposti: <?php echo "$_SESSION[0]" ?></p>
 
         </div>
 
