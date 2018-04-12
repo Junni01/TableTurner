@@ -58,6 +58,19 @@ include 'session.php'?>
             <p>Sähköposti: <?php echo $_SESSION['login_user'] ?></p>
 
         </div>
+            <form action="resetPassword.php" method="post">
+                <div class="form-group">
+                    <label for="oldPassword">Vanha salasana:</label>
+                    <input type="password" name="oldpwd" class="form-control" id="oldPassword">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">Uusi salasana:</label>
+                    <input type="password" name="newpwd" class="form-control" id="newPassword">
+                </div>
+
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
 
         </div>
     </div>
