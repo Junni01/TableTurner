@@ -54,7 +54,7 @@ include 'session.php'?>
         <div>
             <label for="information">Tietosi:</label>
             <p id="information"> Etunimi:  <?php echo $_SESSION["login_user"] ?> </p>
-            <p>Sukunimi: <?php echo $_SESSION['lName']?> </p>
+            <p>Sukunimi: <?php echo $testii?> </p>
             <p>Sähköposti: <?php echo $_SESSION['login_user'] ?></p>
 
         </div>
