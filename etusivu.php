@@ -68,7 +68,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-sm-3">TÄMÄ PITÄISI OLLA SIVUSSA </div>
+        <div class="col-sm-3"></div>
     </div>
 </div>
 
