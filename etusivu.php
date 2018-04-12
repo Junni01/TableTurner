@@ -42,35 +42,35 @@
 ?>
 <div class="container-fluid">
     <div class="row content">
+
         <div class="col-sm-3 sidenav">
             <p>Hei <p id="usernameHold">
            // <?php
-           //   echo '$_SESSION['login_user']';
-            //?>
-        </p></p> <a href="tietomuutos.php"> Muuta tietoja </a>
-                </div>
-<div class="col-sm-6">
-<div class="container">
-    <h1>Varaukset</h1>
-    <p>Tässä voimassaolevat varauksenne</p>
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-        <th>ID</th>
-        <th>Pvm</th>
-            <th>Klo</th>
-        <th>Kommentti</th>
+           //   echo '$_SESSION['login_user']'; ?>
+            </p></p> <a href="tietomuutos.php"> Muuta tietoja </a>
+        </div>
 
-        </tr>
-        </thead>
-        <tbody>
-    <?php
-        include 'getReservations.php';
-    ?>
-        </tbody>
-    </table>
-</div>
-</div>
+        <div class="col-sm-6">
+            <div class="container">
+                <h1>Varaukset</h1>
+                <p>Tässä voimassaolevat varauksenne</p>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Pvm</th>
+                            <th>Klo</th>
+                            <th>Kommentti</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <?php include 'getReservations.php'; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-3"> </div>
     </div>
 </div>
 
