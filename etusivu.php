@@ -49,7 +49,7 @@
             //?>
         </p></p> <a href="tietomuutos.php"> Muuta tietoja </a>
                 </div>
-<div class="col-sm-9">
+<div class="col-sm-6">
 <div class="container">
     <h1>Varaukset</h1>
     <p>Tässä voimassaolevat varauksenne</p>
