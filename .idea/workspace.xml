@@ -37,7 +37,7 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1523529496526" expanded="true" signature="114:139" ph="select * fro... reservation" />
+                <marker date="1523530133130" expanded="true" signature="114:139" ph="select * fro... reservation" />
               </folding>
             </state>
           </provider>
@@ -46,10 +46,10 @@
       <file leaf-file-name="tietomuutos.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tietomuutos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="714">
+              <caret line="55" column="59" lean-forward="false" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
               <folding>
-                <marker date="1523530116564" expanded="true" signature="1850:1866" ph="..." />
+                <marker date="1523530203888" expanded="true" signature="1849:1865" ph="..." />
               </folding>
             </state>
           </provider>
@@ -239,12 +239,12 @@
       <workItem from="1519900949794" duration="1453000" />
       <workItem from="1520493087316" duration="1617000" />
       <workItem from="1520506628129" duration="622000" />
-      <workItem from="1522917971118" duration="12212000" />
+      <workItem from="1522917971118" duration="12306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22631000" />
+    <option name="totallyTimeSpent" value="22725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -645,7 +645,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1523529496526" expanded="true" signature="114:139" ph="select * fro... reservation" />
+            <marker date="1523530133130" expanded="true" signature="114:139" ph="select * fro... reservation" />
           </folding>
         </state>
       </provider>
@@ -690,10 +690,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tietomuutos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="55" column="59" lean-forward="false" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
           <folding>
-            <marker date="1523530116564" expanded="true" signature="1850:1866" ph="..." />
+            <marker date="1523530203888" expanded="true" signature="1849:1865" ph="..." />
           </folding>
         </state>
       </provider>
