@@ -78,7 +78,7 @@
 
 <script>
     function delRes() {
-        var selectedforDeletion = document.querySelector("input:checked").pare;
+        var selectedforDeletion = document.querySelector("input:checked").getAttribute(id);
 
         <?php include delReservation.php; ?>
     }
