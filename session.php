@@ -17,3 +17,6 @@ if(isset($_SESSION['login_user'])){
     $row = mysqli_fetch_array($ses_sql, MYSQLI_ASSOC);
     $login_session = $row['email'];
 }
+else {
+    $testii = "hei";
+}

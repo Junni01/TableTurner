@@ -24,11 +24,9 @@
       <file leaf-file-name="etusivu.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/etusivu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-              <folding>
-                <marker date="1523529496516" expanded="true" signature="2135:2141" ph="..." />
-              </folding>
+            <state relative-caret-position="661">
+              <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,9 +47,9 @@
         <entry file="file://$PROJECT_DIR$/tietomuutos.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
-              <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <marker date="1523529867997" expanded="true" signature="1877:1893" ph="..." />
+                <marker date="1523530116564" expanded="true" signature="1850:1866" ph="..." />
               </folding>
             </state>
           </provider>
@@ -60,12 +58,12 @@
       <file leaf-file-name="session.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="420">
+              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
               <folding>
-                <marker date="1523528869987" expanded="true" signature="191:242" ph="SELECT first... user" />
-                <marker date="1523528869987" expanded="true" signature="279:329" ph="SELECT lastN... user" />
-                <marker date="1523528869987" expanded="true" signature="478:528" ph="select email... user" />
+                <marker date="1523530068381" expanded="true" signature="191:242" ph="SELECT first... user" />
+                <marker date="1523530068381" expanded="true" signature="279:329" ph="SELECT lastN... user" />
+                <marker date="1523530068381" expanded="true" signature="478:528" ph="select email... user" />
               </folding>
             </state>
           </provider>
@@ -154,8 +152,8 @@
         <option value="$PROJECT_DIR$/registerform.php" />
         <option value="$PROJECT_DIR$/tietomuutos.html" />
         <option value="$PROJECT_DIR$/etusivu.php" />
-        <option value="$PROJECT_DIR$/session.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/session.php" />
         <option value="$PROJECT_DIR$/tietomuutos.php" />
       </list>
     </option>
@@ -241,12 +239,12 @@
       <workItem from="1519900949794" duration="1453000" />
       <workItem from="1520493087316" duration="1617000" />
       <workItem from="1520506628129" duration="622000" />
-      <workItem from="1522917971118" duration="11966000" />
+      <workItem from="1522917971118" duration="12212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22385000" />
+    <option name="totallyTimeSpent" value="22631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -654,11 +652,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/etusivu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
-          <folding>
-            <marker date="1523529496516" expanded="true" signature="2135:2141" ph="..." />
-          </folding>
+        <state relative-caret-position="661">
+          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,12 +678,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="420">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding>
-            <marker date="1523528869987" expanded="true" signature="191:242" ph="SELECT first... user" />
-            <marker date="1523528869987" expanded="true" signature="279:329" ph="SELECT lastN... user" />
-            <marker date="1523528869987" expanded="true" signature="478:528" ph="select email... user" />
+            <marker date="1523530068381" expanded="true" signature="191:242" ph="SELECT first... user" />
+            <marker date="1523530068381" expanded="true" signature="279:329" ph="SELECT lastN... user" />
+            <marker date="1523530068381" expanded="true" signature="478:528" ph="select email... user" />
           </folding>
         </state>
       </provider>
@@ -695,9 +691,9 @@
     <entry file="file://$PROJECT_DIR$/tietomuutos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1523529867997" expanded="true" signature="1877:1893" ph="..." />
+            <marker date="1523530116564" expanded="true" signature="1850:1866" ph="..." />
           </folding>
         </state>
       </provider>
