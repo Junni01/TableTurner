@@ -7,6 +7,7 @@
  */
 
 include 'connect.php';
+// $sql = "select * from reservation where userID ='". $_SESSION['userid'] . "';";
 $sql = "select * from reservation";
 $result = $db->query($sql);
 // Selects and echoes all reservations from database to the index.php page

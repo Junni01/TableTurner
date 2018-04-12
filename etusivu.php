@@ -45,8 +45,8 @@
 
         <div class="col-sm-3 sidenav">
             <p>Hei <p id="usernameHold">
-           // <?php
-           //   echo '$_SESSION['login_user']'; ?>
+            <?php
+              echo $_SESSION['fName']; ?>
             </p></p> <a href="tietomuutos.php"> Muuta tietoja </a>
         </div>
 
@@ -60,6 +60,7 @@
                         <th>Pvm</th>
                         <th>Klo</th>
                         <th>Kommentti</th>
+                        <th>Poista?</th>
                     </tr>
                 </thead>
 
@@ -67,10 +68,25 @@
                     <?php include 'getReservations.php'; ?>
                 </tbody>
             </table>
+            <button type="button" class="btn" onclick="delRes()">Poista varaus</button>
         </div>
         <div class="col-sm-3"></div>
     </div>
 </div>
 
 </body>
+
+<script>
+    function delRes() {
+
+
+
+
+    }
+
+
+
+
+
+</script>
 </html>
