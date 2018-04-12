@@ -53,10 +53,7 @@
 <h1>Varaukset: </h1>
 <div id="reservations">
     <?php
-
         include 'getReservations.php';
-        echo "moi";
-
     ?>
 
 </div>
