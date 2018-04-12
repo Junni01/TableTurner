@@ -42,21 +42,22 @@
         <div class="col-sm-3 sidenav">
             <p>Hei <p id="usernameHold">Username</p></p> <a href="etusivu.php"> Etusivu </a>
         </div>
-    </div>
 
 
 
-    <div class="col-sm-9">
+
+        <div class="col-sm-9">
 
 
         <div>
             <label for="information">Tietosi:</label>
-            <p id="information"> Etunimi:  <?php echo "$_SESSION[1]" ?> </p>
-            <p>Sukunimi: <?php echo "$_SESSION[2]"?> </p>
-            <p>Sähköposti: <?php echo "$_SESSION[0]" ?></p>
+            <p id="information"> Etunimi:  <?php echo $_SESSION['fName'] ?> </p>
+            <p>Sukunimi: <?php echo $_SESSION['lName']?> </p>
+            <p>Sähköposti: <?php echo $_SESSION['login_user'] ?></p>
 
         </div>
 
+        </div>
     </div>
 </div>
 
