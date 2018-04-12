@@ -42,7 +42,7 @@ include 'session.php'?>
 <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav">
-            <p>Hei <p id="usernameHold">Username</p></p> <a href="etusivu.php"> Etusivu </a>
+            <p>Hei <?php echo $_SESSION['fName'] ?></p></p> <a href="etusivu.php"> Etusivu </a>
         </div>
 
 
