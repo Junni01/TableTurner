@@ -10,7 +10,7 @@ include 'session.php';
 
 $date = $_POST['date'];
 
-$sql = "select * from reservation";
+$sql = "select * from reservation where date='" . $date ."'";
 $result = $db->query($sql);
 $loop = -1;
 $x = 0;
