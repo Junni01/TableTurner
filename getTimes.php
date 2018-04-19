@@ -98,7 +98,7 @@ for ($x = 0; $x <= 9; $x++) {
                 "</td>".
                 "<td>".
                 //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-                "<input type='radio' class='optradio' id='" . $row['ReservationID'] . "' onclick='deleteRec(this.id)'>Varaa</button>".
+                "<input type='radio' class='optradio' id='" . $row['ReservationID'] . "' onclick='reserverRec(this.id)'>Varaa</button>".
                 "</td>".
                 "</tr>";
 
