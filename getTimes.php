@@ -67,7 +67,7 @@ if ($result->num_rows > 0) {
 }
 
 
-for ($x = 0; $x <= 10; $x++) {
+for ($x = 0; $x <= 8; $x++) {
 
     if ($time[$x] == 0) {
 
@@ -80,7 +80,7 @@ for ($x = 0; $x <= 10; $x++) {
             "</td>" .
             "<td>" .
             //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-            "<input type='radio' name='optradio' id='" . $x . "' onclick='reserverRec(this.id)'>Varaa</button>" .
+            "<input type='radio' name='optradio' id='" . $x . "' onclick='reserverRec(this.id)'></button>" .
             "</td>" .
             "</tr>";
 
