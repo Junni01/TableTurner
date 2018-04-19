@@ -11,3 +11,4 @@ if (isset($_GET["w1"])){
 }
 
 header('url=etusivu.php');
+die();
