@@ -7,6 +7,11 @@
  */
 include 'connect.php';
 
+$resdeletion;
+if (isset($_GET["w1"])) {
+$resdeletion =$_GET["w1"];
+}
+
 $sql = "delete from reservation where reservationID = " . $resdeletion;
 
 $result = $db->query($sql);

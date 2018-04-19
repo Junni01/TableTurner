@@ -70,7 +70,7 @@ if($result->num_rows > 0){
             "</td>".
             "<td>".
             //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-            "<button type='button' class='btn' id='" . $row['ReservationID'] . "' onclick='deleteRec(this.id)'>Poista</button>".
+            "<button type='submit' class='btn' id='" . $row['ReservationID'] . "' onclick='deleteRec(this.id)'>Poista</button>".
             "</td>".
             "</tr>";
 

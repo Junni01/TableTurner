@@ -68,7 +68,6 @@
                     <?php include 'getReservations.php'; ?>
                 </tbody>
             </table>
-            
             <button> </button>
         </div>
         <div class="col-sm-3"></div>
@@ -80,7 +79,7 @@
 <script>
     function deleteRec(id) {
         delId = id;
-        <?php include delReservation.php; ?>
+        window.location.href = "delReservagtion.php?w1=" + id;
     }
 
 
