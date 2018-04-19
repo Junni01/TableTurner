@@ -68,6 +68,7 @@
                     <?php include 'getReservations.php'; ?>
                 </tbody>
             </table>
+            <label for="meeting">Valitse päivä: </label><input id="calendar" type="date" value="2011-01-13"/>
             <?php include 'getTimes.php'; ?>
         </div>
         <div class="col-sm-3"></div>
@@ -82,6 +83,14 @@
         window.location.href = "delReservation.php?w1=" + id;
     }
 
+    function currentDate(){
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("calendar").value = y + "-" + m + "-" + d;
+    }
+currentDate();
 
 
 
