@@ -17,9 +17,12 @@ $sql = "delete from reservation where reservationID = " . $resdeletion;
 $result = $db->query($sql);
 
 if ($result) {
+    echo "<div> Poisto onnistui! </div>";
 
-    console.log("Poisto onnistui");
 } else {
-    console.log("Poisto ei onnistunut");
+
+    echo $db->error;
 }
 
+header("refresh:2; url=etusivu.php");
+die();
