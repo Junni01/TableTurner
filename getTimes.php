@@ -4,6 +4,8 @@
 $sql = "select * from reservation where date='2018-03-01'";
 $result = $db->query($sql);
 $loop = -1;
+$x = 0;
+$full = false;
 
             echo "<h1>Vapaat ajat</h1>
                    <p>Tässä vapaana olevat ajat valitsemallenne päivälle</p>
@@ -70,18 +72,10 @@ for ($x = 0; $x <= 9; $x++) {
                     break;
             }
 
-            if ($row["time"] != $x) {
-                echo "<tr>".
-                    "<td>".
-                    "Täynnä".
-                    "</td>".
-                    "<td>".
-                    $row["date"].
-                    "</td>".
-                    "<td>".
-                    $timeconversion.
-                    "</td>".
-                    "</tr>";
+            if ($row["time"] = $x) {
+
+                $full = true;
+
             } else {
 
                 echo "<tr>".
@@ -108,9 +102,21 @@ for ($x = 0; $x <= 9; $x++) {
 
 
 
+    if ($full) {
 
+        echo "<tr>" .
+            "<td>" .
+            "Täynnä" .
+            "</td>" .
+            "<td>" .
+            $row["date"] .
+            "</td>" .
+            "<td>" .
+            $timeconversion .
+            "</td>" .
+            "</tr>";
 
-
+    }
     //}
 
 }
