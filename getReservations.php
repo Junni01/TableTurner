@@ -69,7 +69,8 @@ if($result->num_rows > 0){
             $row["details"].
             "</td>".
             "<td>".
-            "<button type='button' class='btn'>Basic</button>".
+            //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
+            "<button type='button' class='btn' id='" . $row['ReservationID'] . "' onclick='deleteRec(this.id)'>Poista</button>".
             "</td>".
             "</tr>";
 

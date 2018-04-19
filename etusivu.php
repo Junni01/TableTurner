@@ -68,7 +68,8 @@
                     <?php include 'getReservations.php'; ?>
                 </tbody>
             </table>
-            <button type="button" class="btn" onclick="delRes()">Poista varaus</button>
+            
+            <button> </button>
         </div>
         <div class="col-sm-3"></div>
     </div>
@@ -77,9 +78,8 @@
 </body>
 
 <script>
-    function delRes() {
-        var selectedforDeletion = document.querySelector("input:checked").getAttribute(id);
-
+    function deleteRec(id) {
+        delId = id;
         <?php include delReservation.php; ?>
     }
 
