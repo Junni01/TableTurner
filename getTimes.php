@@ -83,7 +83,7 @@ for ($x = 0; $x <= 8; $x++) {
             "</td>" .
             "<td>" .
             //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-            "<input type='radio' name='optradio' id='" . $x . "' onclick='reserverRec(this.id)'></button>" .
+            "<button type='submit' class='btn' id='" . $x . "' onclick='reserverRec(this.id)'></button>" .
             "</td>" .
             "</tr>";
 
