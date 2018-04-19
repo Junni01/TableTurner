@@ -1,6 +1,4 @@
-<?php
-
-
+<html><?php
 
 $date = $_POST['date'];
 
@@ -103,12 +101,20 @@ for ($x = 0; $x <= 8; $x++) {
 
 }
 
-echo "</tbody>";
-header('url=etusivu.php');
-die();
+echo "</tbody>"; ?>
+
+<script>
+
+function reserverRec(id) {
+
+    
+
+}
 
 
 
+</script>
+</html>
 
 
 
