@@ -31,7 +31,7 @@ $full = false;
 
 for ($x = 0; $x <= 9; $x++) {
 
-    //if($result->num_rows > 0){
+    if($result->num_rows > 0){
         while($row = $result->fetch_assoc()){
 
             $loop += 1;
