@@ -7,8 +7,8 @@ $result = $db->query($sql);
 
 $loop = -1;
 
-            echo "<h1>Varaukset</h1>
-                   <p>Tässä voimassaolevat varauksenne</p>
+            echo "<h1>Vapaat ajat</h1>
+                   <p>Tässä vapaana olevat ajat valitsemallenne päivälle</p>
             <table class='table table-bordered'>
                 <thead>
                     <tr>
