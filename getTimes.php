@@ -20,7 +20,7 @@ $time = array(0,0,0,0,0,0,0,0,0,0);
 $timeconversion = array('15:00', '16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00','24:00');
 
             echo "<h1>Vapaat ajat</h1>
-                   <p>Tässä vapaana olevat ajat valitsemallenne päivälle:</p>" . $date . "
+                   <p>Tässä vapaana olevat ajat valitsemallenne päivälle: " . $date . "</p>
             <table class='table table-bordered'>
                 <thead>
                     <tr>
@@ -89,7 +89,7 @@ for ($x = 0; $x <= 8; $x++) {
             "</td>" .
             "<td>" .
             //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-            "<button type='submit' class='btn' id='" . $x . "' onclick='reserverRec(this.id)'></button>" .
+            "<button type='submit' class='btn' id='" . $x . "' onclick='reserverRec(this.id)'>Varaa</button>" .
             "</td>" .
             "</tr>";
 
