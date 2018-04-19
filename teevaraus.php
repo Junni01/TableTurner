@@ -51,7 +51,6 @@ include 'session.php'?>
 
         <div class="col-sm-9">
 
-            <?php include 'getTimes.php' ?>
 
             <div>
                 <form action="getTimes.php" method="post">
@@ -60,7 +59,7 @@ include 'session.php'?>
                     <button type="submit"> Hae </button>
                 </form>
             </div>
-
+            <?php include 'getTimes.php' ?>
 
 
         </div>
