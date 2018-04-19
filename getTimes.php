@@ -2,7 +2,7 @@
 
 
 
-$date = $_POST['calendar'];
+$date = $_POST['date'];
 
 $sql = "select * from reservation where date='$date'";
 $result = $db->query($sql);
