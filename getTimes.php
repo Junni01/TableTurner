@@ -1,7 +1,10 @@
 <?php
+include 'tmpDate.php';
 
 
-$sql = "select * from reservation where date='2018-03-01'";
+
+
+$sql = "select * from reservation where date='$tmpDate'";
 $result = $db->query($sql);
 $loop = -1;
 $x = 0;

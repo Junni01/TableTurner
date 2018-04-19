@@ -70,7 +70,7 @@
             </table>
             <div>
             <label for="meeting">Valitse päivä: </label>
-                <input id="calendar" type="date" value=""/>
+                <input id="calendar" type="date" value="" onchange="sendDate(this.value)">
             </div>
             <?php include 'getTimes.php'; ?>
         </div>
@@ -82,18 +82,24 @@
 
 <script>
     function deleteRec(id) {
-        delId = id;
+
         window.location.href = "delReservation.php?w1=" + id;
     }
 
-    function currentDate(){
+   /* function currentDate(){
         n =  new Date();
         y = n.getFullYear();
         m = n.getMonth() + 1;
+        if (m<10) {
+            m = 0 + "" + m;
+        }
         d = n.getDate();
         document.getElementById("calendar").value = y + "-" + m + "-" + d;
     }
-currentDate();
+*/
+   function sendDate(date) {
+       window.location.href = "tmpDate.php?w1=" + date;
+   }
 
 
 
