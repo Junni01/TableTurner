@@ -79,7 +79,7 @@
 <script>
     function deleteRec(id) {
         delId = id;
-        window.location.href = "delReservagtion.php?w1=" + id;
+        window.location.href = "delReservation.php?w1=" + id;
     }
 
 
