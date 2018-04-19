@@ -8,7 +8,7 @@
 
 include 'connect.php';
 // $sql = "select * from reservation where userID ='". $_SESSION['userid'] . "';";
-$sql = "select * from reservation where time=1";
+$sql = "select * from reservation";
 $result = $db->query($sql);
 // Selects and echoes all reservations from database to the index.php page
 if($result->num_rows > 0){
@@ -69,7 +69,7 @@ if($result->num_rows > 0){
             $row["details"].
             "</td>".
             "<td>".
-            "<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
+            "<button type='button' class='btn'>Basic</button>".
             "</td>".
             "</tr>";
 
