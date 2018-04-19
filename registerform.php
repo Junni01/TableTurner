@@ -7,10 +7,10 @@
  */
 include "connect.php";
 
-$fName = $_POST['fName'];
-$lName = $_POST['lName'];
-$email = $_POST['email'];
-$password = $_POST['password'];
+$fName = mysqli_real_escape_string($db, $_POST['fName']);
+$lName = mysqli_real_escape_string($db, $_POST['lName']);
+$email =mysqli_real_escape_string($db,  $_POST['email']);
+$password = mysqli_real_escape_string($db, $_POST['password']);
 $passwordhash = password_hash($password, PASSWORD_DEFAULT);
 
 $query = mysqli_query($db, "select email FROM user where email = '$email'");
