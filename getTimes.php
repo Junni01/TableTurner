@@ -8,6 +8,7 @@ $x = 0;
 $full = false;
 
 $time = array(0,0,0,0,0,0,0,0,0,0);
+$timeconversion = array('15:00', '16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00','24:00');
 
             echo "<h1>Vapaat ajat</h1>
                    <p>Tässä vapaana olevat ajat valitsemallenne päivälle</p>
@@ -15,7 +16,6 @@ $time = array(0,0,0,0,0,0,0,0,0,0);
                 <thead>
                     <tr>
                         <th>Tila</th>
-                        <th>Pvm</th>
                         <th>Klo</th>
                         <th>Varaa?</th>
                     </tr>
@@ -76,11 +76,11 @@ for ($x = 0; $x <= 10; $x++) {
             "Vapaa" .
             "</td>" .
             "<td>" .
-            $timeconversion .
+            $timeconversion[$x] .
             "</td>" .
             "<td>" .
             //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-            "<input type='radio' class='optradio' id='" . $x . "' onclick='reserverRec(this.id)'>Varaa</button>" .
+            "<input type='radio' name='optradio' id='" . $x . "' onclick='reserverRec(this.id)'>Varaa</button>" .
             "</td>" .
             "</tr>";
 
@@ -91,7 +91,7 @@ for ($x = 0; $x <= 10; $x++) {
             "Täynnä" .
             "</td>" .
             "<td>" .
-            $x.
+            $timeconversion[$x] .
             "</td>" .
             "</tr>";
 
