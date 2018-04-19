@@ -51,6 +51,8 @@ include 'session.php'?>
 
         <div class="col-sm-9">
 
+            <?php include 'getTimes.php' ?>
+
             <div>
                 <form action="getTimes.php" method="post">
                     <label for="meeting">Valitse päivä: </label>
@@ -58,7 +60,7 @@ include 'session.php'?>
                     <button type="submit"> Hae </button>
                 </form>
             </div>
-            
+
 
 
         </div>
