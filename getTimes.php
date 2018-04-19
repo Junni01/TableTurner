@@ -31,8 +31,8 @@ $full = false;
 
 for ($x = 0; $x <= 9; $x++) {
 
-    if($result->num_rows > 0){
-        while($row = $result->fetch_assoc()){
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
 
             $loop += 1;
 
@@ -78,20 +78,20 @@ for ($x = 0; $x <= 9; $x++) {
 
             } else {
 
-                echo "<tr>".
-                    "<td>".
-                    "Vapaa".
-                    "</td>".
-                    "<td>".
-                    $row["date"].
-                    "</td>".
-                    "<td>".
-                    $timeconversion.
-                    "</td>".
-                    "<td>".
+                echo "<tr>" .
+                    "<td>" .
+                    "Vapaa" .
+                    "</td>" .
+                    "<td>" .
+                    $row["date"] .
+                    "</td>" .
+                    "<td>" .
+                    $timeconversion .
+                    "</td>" .
+                    "<td>" .
                     //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-                    "<input type='radio' class='optradio' id='" . $row['ReservationID'] . "' onclick='reserverRec(this.id)'>Varaa</button>".
-                    "</td>".
+                    "<input type='radio' class='optradio' id='" . $row['ReservationID'] . "' onclick='reserverRec(this.id)'>Varaa</button>" .
+                    "</td>" .
                     "</tr>";
 
 
@@ -102,7 +102,11 @@ for ($x = 0; $x <= 9; $x++) {
 
 
 
-    if ($full) {
+        //}
+
+    }
+
+if ($full) {
 
         echo "<tr>" .
             "<td>" .
@@ -116,12 +120,9 @@ for ($x = 0; $x <= 9; $x++) {
             "</td>" .
             "</tr>";
 
-    }
-    //}
-
 }
 
-
+}
 echo "</tbody>";
 
 
