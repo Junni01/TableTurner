@@ -73,49 +73,47 @@ for ($x = 0; $x <= 9; $x++) {
             }
 
 
+        }
 
 
-    }
 
 
+        if ($row["time"] == $x) {
+            echo "<tr>".
+                "<td>".
+                "Täynnä".
+                "</td>".
+                "<td>".
+                $row["date"].
+                "</td>".
+                "<td>".
+                $timeconversion.
+                "</td>".
+                "</tr>";
+        } else {
 
-}
+            echo "<tr>".
+                "<td>".
+                "Vapaa".
+                "</td>".
+                "<td>".
+                $row["date"].
+                "</td>".
+                "<td>".
+                $timeconversion.
+                "</td>".
+                "<td>".
+                //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
+                "<input type='radio' class='optradio' id='" . $row['ReservationID'] . "' onclick='reserverRec(this.id)'>Varaa</button>".
+                "</td>".
+                "</tr>";
 
 
-    if ($row["time"] == $x) {
-        echo "<tr>".
-            "<td>".
-            "Täynnä".
-            "</td>".
-            "<td>".
-            $row["date"].
-            "</td>".
-            "<td>".
-            $timeconversion.
-            "</td>".
-            "</tr>";
-    } else {
-
-        echo "<tr>".
-            "<td>".
-            "Vapaa".
-            "</td>".
-            "<td>".
-            $row["date"].
-            "</td>".
-            "<td>".
-            $timeconversion.
-            "</td>".
-            "<td>".
-            //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-            "<input type='radio' class='optradio' id='" . $row['ReservationID'] . "' onclick='reserverRec(this.id)'>Varaa</button>".
-            "</td>".
-            "</tr>";
-
+        }
 
     }
-}
 
+}
 
 
 echo "</tbody>";
