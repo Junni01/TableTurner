@@ -1,4 +1,8 @@
-<html><?php
+<html>
+ei toimi
+<?php
+include 'connect.php';
+include 'session.php';
 
 // $date = $_POST['date'];
 
