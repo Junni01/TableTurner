@@ -51,7 +51,7 @@ for ($x = 0; $x <= 9; $x++) {
             }
 
             if ($row["time"] == $x) {
-                "<tr>".
+               echo "<tr>".
                 "<td>".
                 "Täynnä".
                 "</td>".
@@ -63,8 +63,9 @@ for ($x = 0; $x <= 9; $x++) {
                 "</td>".
                 "</tr>";
             } else {
-                "<tr>".
-                "<td>".
+
+                echo "<tr>".
+                 "<td>".
                 "Vapaa".
                 "</td>".
                 "<td>".
