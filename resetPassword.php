@@ -8,8 +8,8 @@
 include "connect.php";
 include "session.php";
 
-$password = $_POST['oldpwd'];
-$newpwd = $_POST['newpwd'];
+$password = mysqli_real_escape_string($db, $_POST['oldpwd']);
+$newpwd = mysqli_real_escape_string($db, $_POST['newpwd']);
 $passwordhash = password_hash($newpwd, PASSWORD_DEFAULT);
 $sql = "SELECT password FROM user WHERE email = '$user_check'";
 $result = mysqli_query($db, $sql);
