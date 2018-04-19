@@ -114,6 +114,7 @@ echo "</tbody>"; ?>
 <script>
 
 function reserverRec(id, date) {
+    console.log(date);
     window.location.href = "makeReservation.php?w1=" + id + "&w2=" + date;
 }
 
