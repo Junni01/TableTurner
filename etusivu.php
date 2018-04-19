@@ -48,6 +48,7 @@
             <?php
               echo $_SESSION['fName']; ?>
             </p></p> <a href="tietomuutos.php"> Muuta tietoja </a>
+            <a href="teevaraus.php"> Tee varaus </a>
         </div>
 
         <div class="col-sm-6">
@@ -68,14 +69,6 @@
                     <?php include 'getReservations.php'; ?>
                 </tbody>
             </table>
-            <div>
-                <form action="getTimes.php" method="post">
-            <label for="meeting">Valitse päivä: </label>
-                <input id="calendar" type="date" name="date" value="">
-                <button type="submit"> Hae </button>
-                </form>
-            </div>
-
         </div>
         <div class="col-sm-3"></div>
     </div>
