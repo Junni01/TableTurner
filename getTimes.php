@@ -7,6 +7,8 @@ $loop = -1;
 $x = 0;
 $full = false;
 
+$time = array(0,0,0,0,0,0,0,0,0,0);
+
             echo "<h1>Vapaat ajat</h1>
                    <p>Tässä vapaana olevat ajat valitsemallenne päivälle</p>
             <table class='table table-bordered'>
@@ -22,107 +24,82 @@ $full = false;
 
 
 
+if ($result->num_rows > 0) {
 
+    while ($row = $result->fetch_assoc()) {
 
+        switch ($row["time"]) {
+            case 0:
+                $time[0] = 1;
+                break;
+            case 1:
+                $time[1] = 1;
+                break;
+            case 2:
+                $time[2] = 1;
+                break;
+            case 3:
+                $time[3] = 1;
+                break;
+            case 4:
+                $time[4] = 1;
+                break;
+            case 5:
+                $time[5] = 1;
+                break;
+            case 6:
+                $time[6] = 1;
+                break;
+            case 7:
+                $time[7] = 1;
+                break;
+            case 8:
+                $time[8] = 1;
+                break;
 
-
-
-
-
-for ($x = 0; $x <= 9; $x++) {
-
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-
-            $loop += 1;
-
-            $timeconversion = "";
-
-            switch ($row["time"]) {
-                case 0:
-                    $timeconversion = '15:00';
-                    break;
-                case 1:
-                    $timeconversion = '16:00';
-                    break;
-                case 2:
-                    $timeconversion = '17:00';
-                    break;
-                case 3:
-                    $timeconversion = '18:00';
-                    break;
-                case 4:
-                    $timeconversion = '19:00';
-                    break;
-                case 5:
-                    $timeconversion = '20:00';
-                    break;
-                case 6:
-                    $timeconversion = '21:00';
-                    break;
-                case 7:
-                    $timeconversion = '22:00';
-                    break;
-                case 8:
-                    $timeconversion = '23:00';
-                    break;
-
-                default:
-                    $timeconversion = 'Unknown time';
-                    break;
-            }
-
-            if ($row["time"] = $x) {
-
-                $full = true;
-
-            } else {
-
-                echo "<tr>" .
-                    "<td>" .
-                    "Vapaa" .
-                    "</td>" .
-                    "<td>" .
-                    $row["date"] .
-                    "</td>" .
-                    "<td>" .
-                    $timeconversion .
-                    "</td>" .
-                    "<td>" .
-                    //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-                    "<input type='radio' class='optradio' id='" . $row['ReservationID'] . "' onclick='reserverRec(this.id)'>Varaa</button>" .
-                    "</td>" .
-                    "</tr>";
-
-
-            }
-
-
+            default:
+                ;
+                break;
         }
-
-
-
-        //}
 
     }
 
-if ($full) {
+}
 
+
+for ($x = 0; $x <= 10; $x++) {
+
+    if ($time[$x] == 0) {
+
+        echo "<tr>" .
+            "<td>" .
+            "Vapaa" .
+            "</td>" .
+            "<td>" .
+            $timeconversion .
+            "</td>" .
+            "<td>" .
+            //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
+            "<input type='radio' class='optradio' id='" . $x . "' onclick='reserverRec(this.id)'>Varaa</button>" .
+            "</td>" .
+            "</tr>";
+
+
+    } else {
         echo "<tr>" .
             "<td>" .
             "Täynnä" .
             "</td>" .
             "<td>" .
-            $row["date"] .
-            "</td>" .
-            "<td>" .
-            $timeconversion .
+            $x.
             "</td>" .
             "</tr>";
 
-}
+
+    }
 
 }
+
 echo "</tbody>";
 
 
