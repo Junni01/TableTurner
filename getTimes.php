@@ -3,8 +3,6 @@
 
 $sql = "select * from reservation where date='2018-03-01'";
 $result = $db->query($sql);
-// Selects and echoes all reservations from database to the index.php page
-
 $loop = -1;
 
             echo "<h1>Vapaat ajat</h1>
@@ -72,7 +70,7 @@ for ($x = 0; $x <= 9; $x++) {
                     break;
             }
 
-            if ($row["time"] == $x) {
+            if ($row["time"] != $x) {
                 echo "<tr>".
                     "<td>".
                     "Täynnä".
