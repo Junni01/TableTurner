@@ -14,8 +14,8 @@ if (isset($_GET["w1"])&& isset($_GET["w2"])){;
 
 }
 
-$sql = "INSERT INTO `reservation` ('date', 'time', 'details', 'userID') VALUES
-('" . $resDate . "', '". $resTime . "', 'Not used', '" . $_SESSION['userID']  . "')";
+$sql = "INSERT INTO `reservation` ('reservationID', 'date', 'time', 'details', 'userID') VALUES
+(NULL, '" . $resDate . "', '" . $resTime . "', 'Not used', '" . $_SESSION['userID']  . "')";
 
 $result = $db->query($sql);
 
