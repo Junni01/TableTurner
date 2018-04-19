@@ -68,7 +68,10 @@
                     <?php include 'getReservations.php'; ?>
                 </tbody>
             </table>
-            <label for="meeting">Valitse päivä: </label><input id="calendar" type="date" value="2011-01-13"/>
+            <div>
+            <label for="meeting">Valitse päivä: </label>
+                <input id="calendar" type="date" value=""/>
+            </div>
             <?php include 'getTimes.php'; ?>
         </div>
         <div class="col-sm-3"></div>
