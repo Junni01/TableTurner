@@ -6,15 +6,16 @@
  * Time: 13:18
  */
 include 'session.php';
+include 'connection.php';
 
-if (isset($_GET["date"])) {;
-    $resDate = $_GET["date"];
-    $resTime = $_GET["time"];
+if (isset($_GET["w1"])&& isset($_GET["w2"])){;
+    $resDate = $_GET["w2"];
+    $resTime = $_GET["w1"];
 
 }
 
 $sql = "INSERT INTO `reservation` ('date', 'time', 'details', 'userID') VALUES
-('" . $resDate . "', '". $resTime . "', 'Not used', '" . $_SESSION['userid']  . "')";
+('" . $resDate . "', '". $resTime . "', 'Not used', '" . $_SESSION['userID']  . "')";
 
 $result = $db->query($sql);
 

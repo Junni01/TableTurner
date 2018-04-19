@@ -89,7 +89,7 @@ for ($x = 0; $x <= 8; $x++) {
             "</td>" .
             "<td>" .
             //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
-            "<button type='submit' class='btn' id='" . $x . "' onclick='reserverRec(this.id)'>Varaa</button>" .
+            "<button type='submit' class='btn' id='" . $x . "' onclick='reserverRec(this.id," . $date . ")'>Varaa</button>" .
             "</td>" .
             "</tr>";
 
@@ -113,10 +113,8 @@ echo "</tbody>"; ?>
 
 <script>
 
-function reserverRec(id) {
-
-
-
+function reserverRec(id, date) {
+    window.location.href = "makeReservation.php?w1=" + id + "&w2=" + date;
 }
 
 
