@@ -69,10 +69,13 @@
                 </tbody>
             </table>
             <div>
+                <form action="getTimes.php" method="post">
             <label for="meeting">Valitse päivä: </label>
-                <input id="calendar" type="date" value="" onchange="sendDate(this.value)">
+                <input id="calendar" type="date" name="date" value="">
+                <button type="submit"> Hae </button>
+                </form>
             </div>
-            <?php include 'getTimes.php'; ?>
+
         </div>
         <div class="col-sm-3"></div>
     </div>
@@ -86,7 +89,7 @@
         window.location.href = "delReservation.php?w1=" + id;
     }
 
-   /* function currentDate(){
+  /*  function currentDate(){
         n =  new Date();
         y = n.getFullYear();
         m = n.getMonth() + 1;
@@ -96,11 +99,11 @@
         d = n.getDate();
         document.getElementById("calendar").value = y + "-" + m + "-" + d;
     }
-*/
+
    function sendDate(date) {
        window.location.href = "tmpDate.php?w1=" + date;
    }
-
+*/
 
 
 

@@ -1,10 +1,10 @@
 <?php
-include 'tmpDate.php';
 
 
 
+$date = $_POST['calendar'];
 
-$sql = "select * from reservation where date='$tmpDate'";
+$sql = "select * from reservation where date='$date'";
 $result = $db->query($sql);
 $loop = -1;
 $x = 0;
@@ -104,6 +104,8 @@ for ($x = 0; $x <= 8; $x++) {
 }
 
 echo "</tbody>";
+header('url=etusivu.php');
+die();
 
 
 
