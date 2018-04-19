@@ -7,6 +7,28 @@ $result = $db->query($sql);
 
 $loop = -1;
 
+            echo "<h1>Varaukset</h1>
+                   <p>Tässä voimassaolevat varauksenne</p>
+            <table class='table table-bordered'>
+                <thead>
+                    <tr>
+                        <th>Tila</th>
+                        <th>Pvm</th>
+                        <th>Klo</th>
+                        <th>Varaa?</th>
+                    </tr>
+                </thead><tbody>";
+
+
+
+
+
+
+
+
+
+
+
 for ($x = 0; $x <= 9; $x++) {
 
     if($result->num_rows > 0){
@@ -87,7 +109,7 @@ for ($x = 0; $x <= 9; $x++) {
 
     }
 
-
+echo "</tbody>";
 
 }
 
