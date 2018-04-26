@@ -24,6 +24,7 @@ if($passwordverify) {
         echo "<div> Salasanan vaihto onnistui! </div>";
     } else {
         echo $db->error;
+        echo "<div>Väärä salasana! Sinut ohjataan takaisin sivulle</div>";
     }
 }
 header("refresh:2; url=tietomuutos.php");

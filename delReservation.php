@@ -12,17 +12,20 @@ if (isset($_GET["w1"])) {
 $resdeletion =$_GET["w1"];
 }
 
-$sql = "delete from reservation where reservationID = " . $resdeletion;
 
-$result = $db->query($sql);
+    $sql = "delete from reservation where reservationID = " . $resdeletion;
 
-if ($result) {
-    echo "<div> Poisto onnistui! </div>";
+    $result = $db->query($sql);
 
-} else {
 
-    echo $db->error;
-}
+    if ($result) {
+        echo "<div> Poisto onnistui! </div>";
+
+    } else {
+
+        echo $db->error;
+    }
+
 
 header("refresh:2; url=etusivu.php");
 die();
