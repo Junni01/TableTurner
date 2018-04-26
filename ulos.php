@@ -7,12 +7,9 @@
  */
 session_start();
 
-// If the user is logged in, delete the session data and destroy the session
-if (isset($_SESSION['userid'])) {
+session_destroy();
 
-    $_SESSION = array();
-
-    session_destroy();
-}
+echo "HYVÄSTI!";
 
 header("refresh:2; url=index.php");
+exit();
