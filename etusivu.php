@@ -47,8 +47,9 @@
             <p>Hei <p id="usernameHold">
             <?php
               echo $_SESSION['fName']; ?>
-            </p></p> <a href="tietomuutos.php"> Muuta tietoja </a>
-            <a href="teevaraus.php"> Tee varaus </a>
+            </p></p> <a href="tietomuutos.php"> Muuta tietoja </a></br>
+            <a href="teevaraus.php"> Tee varaus </a></br>
+            <a href="ulos.php"> Kirjaudu ulos </a></br>
         </div>
 
         <div class="col-sm-6">
