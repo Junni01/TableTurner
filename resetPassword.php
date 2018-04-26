@@ -23,9 +23,13 @@ if($passwordverify) {
     if ($db->query($sql) === TRUE){
         echo "<div> Salasanan vaihto onnistui! </div>";
     } else {
-        //echo $db->error;
-        echo "<div>Väärä salasana! Sinut ohjataan takaisin sivulle</div>";
+        echo $db->error;
+
     }
+
+}
+else {
+    echo "<div>Väärä salasana! Sinut ohjataan takaisin sivulle</div>";
 }
 header("refresh:2; url=tietomuutos.php");
 die();
