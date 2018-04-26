@@ -14,10 +14,13 @@ if (isset($_GET["w1"])&& isset($_GET["w2"])){;
 
 }
 
-$sql = "INSERT INTO `reservation` (`ReservationID`, `date`, `time`, `details`, `userID`) VALUES (NULL, '" . $resDate . "', '". $resTime ."', 'qwweqe', '". $_SESSION['userID'] ."')";
+// $sql = "INSERT INTO `reservation` (`ReservationID`, `date`, `time`, `details`, `userID`) VALUES (NULL, '" . $resDate . "', '". $resTime ."', 'qwweqe', '". $_SESSION['userID'] ."')";
 
 //    "INSERT INTO `reservation` ('reservationID', 'date', 'time', 'details', 'userID') VALUES
 // (NULL, '" . $resDate . "', '" . $resTime . "', 'Not used', '" . $_SESSION['userID']  . "')";
+
+$sql = "INSERT INTO `reservation` (`ReservationID`, `date`, `time`, `details`, `userID`) VALUES (NULL, ?, ?, 'qwweqe', ?)";
+$sql->bind_param($resDate, $resTime, $_SESSION['userID']);
 
 $result = $db->query($sql);
 
