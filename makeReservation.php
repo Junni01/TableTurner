@@ -6,7 +6,7 @@
  * Time: 13:18
  */
 include 'session.php';
-include 'connection.php';
+include 'connect.php';
 
 if (isset($_GET["w1"])&& isset($_GET["w2"])){;
     $resDate = $_GET["w2"];
@@ -22,7 +22,9 @@ if (isset($_GET["w1"])&& isset($_GET["w2"])){;
 $sql = $db->prepare("INSERT INTO `reservation` (`ReservationID`, `date`, `time`, `details`, `userID`) VALUES (NULL, ?, ?, 'qwweqe', ?)");
 $sql->bind_param($resDate, $resTime, $_SESSION['userID']);
 
-$result = $db->query($sql);
+ // $result = $db->query($sql);
+
+$result = $sql->execute();
 
 if ($result) {
     echo "<div> Varaus onnistui! </div>";
