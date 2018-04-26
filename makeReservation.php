@@ -14,6 +14,7 @@ if (isset($_GET["w1"])&& isset($_GET["w2"])){;
 
 }
 
+// This file creates the reservations for the time the user has chosen. User clicks the reserve button and the line's index is passed here and the session user id is used to identify the user
 
 //Prepared statement for query
 $sql = $db->prepare("INSERT INTO `reservation` (`ReservationID`, `date`, `time`, `details`, `userID`) VALUES (NULL, ?, ?, 'qwweqe', ?)");

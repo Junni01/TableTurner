@@ -8,7 +8,7 @@
 
 include 'connect.php';
 include 'session.php';
-
+// This file shows the user's reservations, session user id determines which data to fetch from the server
 
 $sql = "select * from reservation where userID='" . $_SESSION['userID'] . "'";
 $result = $db->query($sql);
@@ -17,7 +17,7 @@ if($result->num_rows > 0){
     while($row = $result->fetch_assoc()){
 
         $timeconversion = "";
-
+// Here we used a custom function to convert the time attribute which we get from the database into more readable time format.
         $timeconversion = timeConversion($row["time"]);
 
         echo
