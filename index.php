@@ -1,7 +1,8 @@
 <?php
 include "session.php";
+include "connect.php";
 
-if(isset($_SESSION)) {
+if(isset($_SESSION['userID'])) {
     header("url=etusivu.php");
 
 }
@@ -68,7 +69,7 @@ if(isset($_SESSION)) {
 
 
                 </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">KirjauduT</button><br>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Kirjaudu</button><br>
                 <a href="register.html"> Luo tunnukset </a>
             </form>
         </div>
