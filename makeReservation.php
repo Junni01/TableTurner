@@ -20,13 +20,13 @@ if (isset($_GET["w1"])&& isset($_GET["w2"])){;
 // (NULL, '" . $resDate . "', '" . $resTime . "', 'Not used', '" . $_SESSION['userID']  . "')";
 
 $sql = $db->prepare("INSERT INTO `reservation` (`ReservationID`, `date`, `time`, `details`, `userID`) VALUES (NULL, ?, ?, 'qwweqe', ?)");
-$sql->bind_param($resDate, $resTime, $_SESSION['userID']);
+$sql->bind_param("sss", $resDate, $resTime, $_SESSION['userID']);
 
  // $result = $db->query($sql);
 
-$sql->execute();
 
-if ($result) {
+
+if ($sql->execute()) {
     echo "<div> Varaus onnistui! </div>";
 
 } else {
