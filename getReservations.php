@@ -18,43 +18,7 @@ if($result->num_rows > 0){
 
         $timeconversion = "";
 
-        switch ($row["time"]) {
-            case 0:
-                $timeconversion = '15:00';
-                break;
-            case 1:
-                $timeconversion = '16:00';
-                break;
-            case 2:
-                $timeconversion = '17:00';
-                break;
-            case 3:
-                $timeconversion = '18:00';
-                break;
-            case 4:
-                $timeconversion = '19:00';
-                break;
-            case 5:
-                $timeconversion = '20:00';
-                break;
-            case 6:
-                $timeconversion = '21:00';
-                break;
-            case 7:
-                $timeconversion = '22:00';
-                break;
-            case 8:
-                $timeconversion = '23:00';
-                break;
-
-            default:
-                $timeconversion = 'Unknown time';
-                break;
-        }
-
-
-
-
+        $timeconversion = timeConversion($row["time"]);
 
         echo
             "<tr>".
@@ -77,4 +41,44 @@ if($result->num_rows > 0){
             "</tr>";
 
     }
+}
+
+function timeConversion($date) {
+
+    switch ($date) {
+        case 0:
+            return '15:00';
+            break;
+        case 1:
+            return '16:00';
+            break;
+        case 2:
+            return '17:00';
+            break;
+        case 3:
+            return '18:00';
+            break;
+        case 4:
+            return '19:00';
+            break;
+        case 5:
+            return '20:00';
+            break;
+        case 6:
+            return '21:00';
+            break;
+        case 7:
+            return '22:00';
+            break;
+        case 8:
+            return '23:00';
+            break;
+
+        default:
+            return 'Unknown time';
+            break;
+    }
+
+
+
 }
