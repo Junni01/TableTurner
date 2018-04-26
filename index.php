@@ -1,6 +1,22 @@
+<?php
+include "session.php";
+
+if(isset($_SESSION)) {
+    header("url=etusivu.php");
+
+}
+
+
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <title>Le Penier</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
