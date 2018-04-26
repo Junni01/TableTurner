@@ -15,8 +15,9 @@ $result = $db->query($sql);
 $loop = -1;
 $x = 0;
 $full = false;
-
+//sets array used in switch-case
 $time = array(0,0,0,0,0,0,0,0,0,0);
+//Array is used for conversing time from index.
 $timeconversion = array('15:00', '16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00','24:00');
 
             echo "<h1>Vapaat ajat</h1>
@@ -36,7 +37,7 @@ $timeconversion = array('15:00', '16:00','17:00','18:00','19:00','20:00','21:00'
 if ($result->num_rows > 0) {
 
     while ($row = $result->fetch_assoc()) {
-
+//Checks what is rows index for reservation time.
         switch ($row["time"]) {
             case 0:
                 $time[0] = 1;
@@ -88,7 +89,6 @@ for ($x = 0; $x <= 8; $x++) {
             $timeconversion[$x] .
             "</td>" .
             "<td>" .
-            //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
             "<button type='submit' class='btn' name='" . $date . "' id='" . $x . "' onclick='reserverRec(this.id, this.name)'>Varaa</button>" .
             "</td>" .
             "</tr>";

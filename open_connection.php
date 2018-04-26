@@ -1,4 +1,9 @@
+
+
 <?php
+/*
+ * Files is not in use
+ */
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';

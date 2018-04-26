@@ -46,6 +46,7 @@
         <div class="col-sm-3 sidenav">
             <p>Hei <p id="usernameHold">
             <?php
+            //echos user first name
               echo $_SESSION['fName']; ?>
             </p></p> <a href="tietomuutos.php"> Muuta tietoja </a></br>
             <a href="teevaraus.php"> Tee varaus </a></br>
@@ -83,21 +84,7 @@
         window.location.href = "delReservation.php?w1=" + id;
     }
 
-  /*  function currentDate(){
-        n =  new Date();
-        y = n.getFullYear();
-        m = n.getMonth() + 1;
-        if (m<10) {
-            m = 0 + "" + m;
-        }
-        d = n.getDate();
-        document.getElementById("calendar").value = y + "-" + m + "-" + d;
-    }
 
-   function sendDate(date) {
-       window.location.href = "tmpDate.php?w1=" + date;
-   }
-*/
 
 
 

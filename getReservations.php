@@ -9,7 +9,7 @@
 include 'connect.php';
 include 'session.php';
 
-// $sql = "select * from reservation where userID ='". $_SESSION['userid'] . "';";
+
 $sql = "select * from reservation where userID='" . $_SESSION['userID'] . "'";
 $result = $db->query($sql);
 // Selects and echoes all reservations from database to the index.php page
@@ -35,7 +35,6 @@ if($result->num_rows > 0){
             $row["details"].
             "</td>".
             "<td>".
-            //"<input type='radio' name='optradio' id='" . $row["ReservationID"] . "'>".
             "<button type='submit' class='btn' id='" . $row['ReservationID'] . "' onclick='deleteRec(this.id)'>Poista</button>".
             "</td>".
             "</tr>";

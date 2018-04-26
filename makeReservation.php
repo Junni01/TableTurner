@@ -7,25 +7,19 @@
  */
 include 'session.php';
 include 'connect.php';
-
+//Gets passed parameters
 if (isset($_GET["w1"])&& isset($_GET["w2"])){;
     $resDate = $_GET["w2"];
     $resTime = $_GET["w1"];
 
 }
 
-// $sql = "INSERT INTO `reservation` (`ReservationID`, `date`, `time`, `details`, `userID`) VALUES (NULL, '" . $resDate . "', '". $resTime ."', 'qwweqe', '". $_SESSION['userID'] ."')";
 
-//    "INSERT INTO `reservation` ('reservationID', 'date', 'time', 'details', 'userID') VALUES
-// (NULL, '" . $resDate . "', '" . $resTime . "', 'Not used', '" . $_SESSION['userID']  . "')";
-
+//Prepared statement for query
 $sql = $db->prepare("INSERT INTO `reservation` (`ReservationID`, `date`, `time`, `details`, `userID`) VALUES (NULL, ?, ?, 'qwweqe', ?)");
 $sql->bind_param("sss", $resDate, $resTime, $_SESSION['userID']);
 
- // $result = $db->query($sql);
-
-
-
+//does query and check if it went through
 if ($sql->execute()) {
     echo "<div> Varaus onnistui! </div>";
 

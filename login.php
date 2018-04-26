@@ -9,6 +9,7 @@
 
    session_start();
    include"connect.php";
+
    if($_SERVER["REQUEST_METHOD"] == "POST") {
        $l_email = mysqli_real_escape_string($db, $_POST['email']);
        $l_password = mysqli_real_escape_string($db, $_POST['password']);
@@ -17,7 +18,7 @@
        $result = mysqli_query($db, $sql);
        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
        $hashFromDb = $row['password'];
-       //returns true is entered password matches one in db
+       //returns true if entered password matches one in db
        $passwordHash = password_verify($l_password, $hashFromDb);
        if($passwordHash){
            //Set sessions variables

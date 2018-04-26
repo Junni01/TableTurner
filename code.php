@@ -1,4 +1,7 @@
-
+<?php
+/*
+ * File is not in use
+ */
 $servername = "localhost";
 $username = "root";
 $password = "";

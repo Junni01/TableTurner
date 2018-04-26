@@ -8,6 +8,7 @@
 include 'connect.php';
 
 $resdeletion;
+//initial variable from passed parameter that is reservation ID
 if (isset($_GET["w1"])) {
 $resdeletion =$_GET["w1"];
 }
