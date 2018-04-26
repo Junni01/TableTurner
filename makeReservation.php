@@ -24,7 +24,7 @@ $sql->bind_param($resDate, $resTime, $_SESSION['userID']);
 
  // $result = $db->query($sql);
 
-$result = $sql->execute();
+$sql->execute();
 
 if ($result) {
     echo "<div> Varaus onnistui! </div>";
