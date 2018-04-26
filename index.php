@@ -62,13 +62,6 @@ if(isset($_SESSION['userID'])) {
                 <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Sähköposti" required autofocus>
                 <label for="inputPassword" class="sr-only">Salasana</label>
                 <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Salasana" required>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Muista minut
-                    </label>
-
-
-                </div>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Kirjaudu</button><br>
                 <a href="register.html"> Luo tunnukset </a>
             </form>
