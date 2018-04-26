@@ -3,7 +3,7 @@ include "session.php";
 include "connect.php";
 
 if(isset($_SESSION['userID'])) {
-    header("url=etusivu.php");
+    header("Location: https://1700035.azurewebsites.net/etusivu.php" );
 
 }
 
